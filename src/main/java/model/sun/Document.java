@@ -8,10 +8,10 @@ import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlRootElement;
 
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlRootElement(name = "document", namespace = "urn:stackoverflow:documentnamespace")
+@XmlRootElement(name = "document")
 public class Document {
 
-	@XmlElement(name = "Export")
+	@XmlElement(name = "Export", namespace="urn:adcubum:Syrius")
 	private Export export;
 
 	public Export getExport() {

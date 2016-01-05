@@ -30,6 +30,7 @@ public class MarshallerTest {
 			System.out.println("Context class: " + jaxbContext.getClass());
 			Marshaller marshaller = jaxbContext.createMarshaller();
 			marshaller.setProperty(Marshaller.JAXB_FORMATTED_OUTPUT, true);
+			
 			marshaller.marshal(document, System.out);
 		} catch (JAXBException e) {
 			e.printStackTrace();

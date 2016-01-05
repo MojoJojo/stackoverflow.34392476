@@ -18,6 +18,7 @@ public class MarshallerTest {
 	public void marshalDocument() {
 		Document document = new Document();
 		Export export = new Export();
+		
 		ExportKopf exportKopf = new ExportKopf();
 		exportKopf.setQuelle("lokal");
 		export.setExportKopf(exportKopf);
